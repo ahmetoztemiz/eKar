@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E342D608281415E2001C2E4E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D607281415E2001C2E4E /* MapView.swift */; };
+		E342D60A281415F0001C2E4E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D609281415F0001C2E4E /* MapViewModel.swift */; };
+		E342D60C2814187A001C2E4E /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D60B2814187A001C2E4E /* VehicleView.swift */; };
+		E342D60E28141883001C2E4E /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D60D28141883001C2E4E /* VehicleViewModel.swift */; };
 		E3C692F428140CAD00399438 /* eKarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C692F328140CAD00399438 /* eKarApp.swift */; };
-		E3C692F628140CAD00399438 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C692F528140CAD00399438 /* ContentView.swift */; };
 		E3C692F828140CAD00399438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692F728140CAD00399438 /* Assets.xcassets */; };
 		E3C692FB28140CAD00399438 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692FA28140CAD00399438 /* Preview Assets.xcassets */; };
 		E3C6930528140CAE00399438 /* eKarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C6930428140CAE00399438 /* eKarTests.swift */; };
@@ -34,9 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E342D607281415E2001C2E4E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E342D609281415F0001C2E4E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		E342D60B2814187A001C2E4E /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
+		E342D60D28141883001C2E4E /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
 		E3C692F028140CAD00399438 /* eKar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eKar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C692F328140CAD00399438 /* eKarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eKarApp.swift; sourceTree = "<group>"; };
-		E3C692F528140CAD00399438 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E3C692F728140CAD00399438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3C692FA28140CAD00399438 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E3C6930028140CAE00399438 /* eKarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eKarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E342D5FE28140E24001C2E4E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E342D605281415B1001C2E4E /* Map */,
+				E342D606281415B8001C2E4E /* Vehicle */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E342D5FF28140E3C001C2E4E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3C692F728140CAD00399438 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E342D60028140E41001C2E4E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E342D60128140E50001C2E4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E342D60228140E5A001C2E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E342D60328140E5E001C2E4E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E342D60428140E6C001C2E4E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E3C692F328140CAD00399438 /* eKarApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E342D605281415B1001C2E4E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E342D607281415E2001C2E4E /* MapView.swift */,
+				E342D609281415F0001C2E4E /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E342D606281415B8001C2E4E /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				E342D60B2814187A001C2E4E /* VehicleView.swift */,
+				E342D60D28141883001C2E4E /* VehicleViewModel.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
 		E3C692E728140CAD00399438 = {
 			isa = PBXGroup;
 			children = (
@@ -94,9 +171,13 @@
 		E3C692F228140CAD00399438 /* eKar */ = {
 			isa = PBXGroup;
 			children = (
-				E3C692F328140CAD00399438 /* eKarApp.swift */,
-				E3C692F528140CAD00399438 /* ContentView.swift */,
-				E3C692F728140CAD00399438 /* Assets.xcassets */,
+				E342D60428140E6C001C2E4E /* App */,
+				E342D5FE28140E24001C2E4E /* Scenes */,
+				E342D60228140E5A001C2E4E /* Views */,
+				E342D60128140E50001C2E4E /* Models */,
+				E342D60328140E5E001C2E4E /* Supporting Files */,
+				E342D60028140E41001C2E4E /* Helper */,
+				E342D5FF28140E3C001C2E4E /* Resources */,
 				E3C692F928140CAD00399438 /* Preview Content */,
 			);
 			path = eKar;
@@ -257,8 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3C692F628140CAD00399438 /* ContentView.swift in Sources */,
+				E342D60E28141883001C2E4E /* VehicleViewModel.swift in Sources */,
+				E342D608281415E2001C2E4E /* MapView.swift in Sources */,
 				E3C692F428140CAD00399438 /* eKarApp.swift in Sources */,
+				E342D60A281415F0001C2E4E /* MapViewModel.swift in Sources */,
+				E342D60C2814187A001C2E4E /* VehicleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
