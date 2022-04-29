@@ -10,21 +10,15 @@ import Foundation
 class VehicleViewModel: ObservableObject {
     private var service: BaseServiceProtocol
     private var detailModel: VehicleDetailModel?
-    private var test = "Test"
 
-    let items = [
-       AboutModel.init(imageName: "carIcon", title: "3L Engine"),
-       AboutModel.init(imageName: "seatIcon", title: "2 Seats"),
-       AboutModel.init(imageName: "manualIcon", title: "Manual"),
-       AboutModel.init(imageName: "fuelIcon", title: "Petrol")
-   ]
-    
-    let brandData = BrandModel(name: "Nissan", model: "Micra", type: "Hatchback")
+    @Published var isLoading = false
+    @Published var aboutModel: [AboutModel] = []
+    @Published var brandDataModel = BrandModel(name: "-", model: "-", type: "-")
+    @Published var vehicleYear = "-"
     
     let images = [
-        VehicleImageModel(imageName: Constants.Icon.backRight),
-        VehicleImageModel(imageName: Constants.Icon.backLeft),
-        VehicleImageModel(imageName: Constants.Icon.frontLeft)
+        VehicleImageModel(imageName: Constants.Icon.priusFront),
+        VehicleImageModel(imageName: Constants.Icon.priusBack)
     ]
     
     let tagList = [
@@ -41,17 +35,68 @@ class VehicleViewModel: ObservableObject {
         self.service = service
     }
     
-    func getText() -> String {
-        return test
-    }
-    
     func getVehicleDetail() {
-        let paramValues: [(urlParameters, String)] = [(.key, Constants.ParamValues.apiKey),
-                                                 (.vin, Constants.ParamValues.vinNumber)]
+        isLoading = true
+        let paramValues: [(urlParameters, String)] = [
+            (.key, Constants.ParamValues.apiKey),
+            (.vin, Constants.ParamValues.vinNumber)
+        ]
         
         service.responseService(params: paramValues) { [weak self] (result: VehicleDetailModel?) in
             self?.detailModel = result
+            self?.configureDataModels()
         }
+    }
+    
+    private func configureDataModels() {
+        DispatchQueue.main.async {
+            self.setBrandData()
+            self.setAboutCarData()
+            self.isLoading = false
+        }
+    }
+    
+    private func setBrandData() {
+        guard let attributes = detailModel?.attributes else { return }
+        
+        brandDataModel = BrandModel(
+            name: attributes.make ?? "-",
+            model: attributes.model ?? "-",
+            type: attributes.style ?? "-"
+        )
+        
+        vehicleYear = attributes.year ?? "-"
+    }
+    
+    private func setAboutCarData() {
+        guard let attributes = detailModel?.attributes else { return }
+        
+        let engine = AboutModel.init(
+            imageName: "carIcon",
+            title: attributes.engine ?? "-"
+        )
+        
+        let seatTitle = String(
+            format: Constants.Text.xSeat,
+            attributes.standard_seating ?? "-"
+        )
+        
+        let seat = AboutModel.init(
+            imageName: "seatIcon",
+            title: seatTitle
+        )
+        
+        let transmission = AboutModel.init(
+            imageName: "manualIcon",
+            title: attributes.transmission_short ?? "-"
+        )
+                    
+        let fuel = AboutModel.init(
+            imageName: "fuelIcon",
+            title: attributes.fuel_capacity ?? "-"
+        )
+        
+        aboutModel = [engine, seat, transmission, fuel]
     }
 }
 

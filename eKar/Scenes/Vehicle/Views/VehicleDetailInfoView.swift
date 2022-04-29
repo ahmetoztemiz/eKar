@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct VehicleDetailInfoView: View {
+    var year: String
     let colors = [Color.black, Color.blue, Color.red, Color.gray]
+    
+    init(year: String) {
+        self.year = year
+    }
     
     var body: some View {
         HStack {
-            Text(String(format: Constants.Text.yearX, "2010"))
+            Text(String(format: Constants.Text.yearX, year))
                 .font(.system(size: 12))
                 .frame(maxWidth: .infinity, alignment: .leading)
             
@@ -35,6 +40,6 @@ struct VehicleDetailInfoView: View {
 
 struct VehicleDetailInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        VehicleDetailInfoView()
+        VehicleDetailInfoView(year: "2020")
     }
 }

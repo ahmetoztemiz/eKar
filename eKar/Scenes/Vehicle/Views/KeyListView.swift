@@ -19,6 +19,10 @@ struct KeyListView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
+            Text(Constants.Text.keyFeatures)
+                .bold()
+                .font(.system(size: 11))
+            
             ForEach(groupedTagArray.indices) { index in
                 HStack {
                     ForEach(groupedTagArray[index].indices) { tagIndex in
@@ -27,6 +31,7 @@ struct KeyListView: View {
                             .padding(.vertical, 10)
                             .padding(.horizontal)
                             .lineLimit(1)
+                            .minimumScaleFactor(0.5)
                             .background(Color("BlueBGColor"))
                             .foregroundColor(.black)
                             .clipShape(Capsule())
@@ -37,7 +42,7 @@ struct KeyListView: View {
     }
     
     func setGroupedTagArray() -> [[TagsModel]] {
-        let gapWidth: CGFloat = 20
+        let gapWidth: CGFloat = 10
         var groupedArray: [[TagsModel]] = []
         var tempItems: [TagsModel] = []
         var width: CGFloat = 0

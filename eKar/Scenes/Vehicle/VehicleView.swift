@@ -11,50 +11,53 @@ struct VehicleView: View {
     @StateObject var viewModel: VehicleViewModel
     @State private var showingSheet = false
     
+    
+    
     init(viewModel: VehicleViewModel = .init()) {
         _viewModel = StateObject(wrappedValue: viewModel)
+        
     }
     
     var body: some View {
         GeometryReader { geometry in
-            VStack {
-                ScrollView {
-                    Text(viewModel.getText()).onAppear {
-                        viewModel.getVehicleDetail()
+            ZStack {
+                VStack {
+                    ScrollView {
+                        PagableImageView(images: viewModel.images)
+                            .frame(height: 200)
+                        
+                        VehicleDetailInfoView(year: viewModel.vehicleYear)
+                            .padding(.horizontal, 20)
+                        
+                        ContractSliderView()
+                        
+                        AboutVehicleView(mainTitle: Constants.Text.aboutTitle, items: viewModel.aboutModel)
+                            .padding(.horizontal, 20)
+                        
+                        KeyListView(tagList: viewModel.tagList)
+                            .padding(.horizontal, 20)
                     }
                     
-                    PagableImageView(images: viewModel.images)
-                        .frame(height: 200)
-        
-                    VehicleDetailInfoView()
-                        .padding(.leading, 20)
-                        .padding(.trailing, 20)
+                    Rectangle()
+                        .fill(.gray)
+                        .frame(height: 1)
                     
-                    ContractSliderView()
+                    VehicleBrandView(brandModel: viewModel.brandDataModel)
+                        .padding(.horizontal, 20)
                     
-                    AboutVehicleView(mainTitle: Constants.Text.aboutTitle, items: viewModel.items)
-                        .padding(.leading, 20)
-                        .padding(.trailing, 20)
-                    
-                    KeyListView(tagList: viewModel.tagList)
+                    Button(Constants.Text.proceedButton) {
+                        showingSheet.toggle()
+                    }
+                    .padding(10)
+                    .buttonStyle(ProceedButtonStyle())
+                    .frame(height: 80)
+                    .sheet(isPresented: $showingSheet) {
+                        OnBoardView()
+                    }
                 }
                 
-                Rectangle()
-                    .fill(.gray)
-                    .frame(height: 1)
-                
-                VehicleBrandView(brandModel: viewModel.brandData)
-                    .padding(.leading, 20)
-                    .padding(.trailing, 20)
-                
-                Button(Constants.Text.proceedButton) {
-                    showingSheet.toggle()
-                }
-                .padding(10)
-                .buttonStyle(ProceedButtonStyle())
-                .frame(height: 80)
-                .sheet(isPresented: $showingSheet) {
-                    OnBoardView()
+                if viewModel.isLoading {
+                    LoadingView()
                 }
             }
         }
@@ -62,6 +65,9 @@ struct VehicleView: View {
             ToolbarItem(placement: .principal) {
                 NavigationIcon()
             }
+        }
+        .onAppear {
+            viewModel.getVehicleDetail()
         }
     }
 }

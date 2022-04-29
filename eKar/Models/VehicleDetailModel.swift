@@ -21,13 +21,8 @@ struct VehicleAttributes: Codable {
     var type: String?
     var size: String?
     var category: String?
-    var made_in: String?
-    var made_in_city: String?
-    var doors: String?
     var fuel_type: String?
     var fuel_capacity: String?
-    var city_mileage: String?
-    var highway_mileage: String?
     var engine: String?
     var engine_size: String?
     var engine_cylinders: String?

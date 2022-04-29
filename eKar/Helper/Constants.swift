@@ -33,6 +33,8 @@ struct Constants {
         static let howContractWorks = "how contract works?"
         static let takePhoto = "Take a photo!"
         static let submitSuccess = "Thank you for choosing ekar"
+        static let xSeat = "%@ Seats"
+        static let keyFeatures = "Key Features"
     }
     
     struct Icon {
@@ -44,9 +46,11 @@ struct Constants {
         static let fuel = "fuelIcon"
         static let backRight = "backRight"
         static let backLeft = "backLeft"
+        static let priusFront = "priusFront"
+        static let priusBack = "priusBack"
         static let frontRight = "frontRight"
         static let frontLeft = "frontLeft"
-        static let xMark = "xmark"
+        static let xMark = "xmark"   
     }
     
     struct ParamValues {

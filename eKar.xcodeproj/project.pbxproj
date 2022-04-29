@@ -33,6 +33,7 @@
 		E342D63E281C313E001C2E4E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D63D281C313E001C2E4E /* SliderView.swift */; };
 		E342D640281C38B8001C2E4E /* ContractButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */; };
 		E342D642281C4799001C2E4E /* TagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D641281C4799001C2E4E /* TagsModel.swift */; };
+		E38E8EB1281C87A30092048F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38E8EB0281C87A30092048F /* LoadingView.swift */; };
 		E3C692F428140CAD00399438 /* eKarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C692F328140CAD00399438 /* eKarApp.swift */; };
 		E3C692F828140CAD00399438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692F728140CAD00399438 /* Assets.xcassets */; };
 		E3C692FB28140CAD00399438 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692FA28140CAD00399438 /* Preview Assets.xcassets */; };
@@ -86,6 +87,7 @@
 		E342D63D281C313E001C2E4E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractButtonStyle.swift; sourceTree = "<group>"; };
 		E342D641281C4799001C2E4E /* TagsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsModel.swift; sourceTree = "<group>"; };
+		E38E8EB0281C87A30092048F /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E3C692F028140CAD00399438 /* eKar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eKar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C692F328140CAD00399438 /* eKarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eKarApp.swift; sourceTree = "<group>"; };
 		E3C692F728140CAD00399438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				E342D61E281B0579001C2E4E /* ProceedButtonStyle.swift */,
 				E342D61B281B04C3001C2E4E /* NavigationIcon.swift */,
 				E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */,
+				E38E8EB0281C87A30092048F /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				E342D60E28141883001C2E4E /* VehicleViewModel.swift in Sources */,
 				E342D642281C4799001C2E4E /* TagsModel.swift in Sources */,
 				E342D630281B515E001C2E4E /* AboutVehicleView.swift in Sources */,
+				E38E8EB1281C87A30092048F /* LoadingView.swift in Sources */,
 				E342D63E281C313E001C2E4E /* SliderView.swift in Sources */,
 				E342D61F281B0579001C2E4E /* ProceedButtonStyle.swift in Sources */,
 				E342D62C281B2458001C2E4E /* OnBoardViewModel.swift in Sources */,
