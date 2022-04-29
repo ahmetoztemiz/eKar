@@ -54,7 +54,7 @@ struct ContractSliderView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(Constants.Text.tenure.uppercased())
-                        .font(.system(size: 12))
+                        .font(.system(size: 11))
                     
                     Text(Constants.Text.rentMonthRange)
                         .font(.system(size: 18))
@@ -83,7 +83,7 @@ struct ContractSliderView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text(Constants.Text.bookingFee.uppercased())
                         .bold()
-                        .font(.system(size: 12))
+                        .font(.system(size: 11))
                     
                     HStack(alignment: .lastTextBaseline) {
                         Text("AED")
