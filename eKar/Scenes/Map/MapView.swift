@@ -6,24 +6,36 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct MapView: View {
-    @StateObject var viewModel: MapViewModel
-    
-    init(viewModel: MapViewModel = .init()) {
-        _viewModel = StateObject(wrappedValue: viewModel)
-    }
+    @StateObject private var viewModel = MapViewModel()
     
     var body: some View {
-        Text(viewModel.test)
+        NavigationView {
+            Map(coordinateRegion: $viewModel.mapRegion, annotationItems: viewModel.getLocations()) { item in
+                MapAnnotation(coordinate: item.location.coordinate) {
+                    VStack {
+                        NavigationLink(destination: VehicleView()) {
+                            Image(Constants.Icon.marker)
+                        }
+                    }
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    NavigationIcon()
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }
 
+
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        let viewModel = MapViewModel()
-        viewModel.test = "DEFG"
         
-        return MapView(viewModel: viewModel)
+        return MapView()
     }
 }

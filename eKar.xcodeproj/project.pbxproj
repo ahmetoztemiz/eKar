@@ -11,6 +11,28 @@
 		E342D60A281415F0001C2E4E /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D609281415F0001C2E4E /* MapViewModel.swift */; };
 		E342D60C2814187A001C2E4E /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D60B2814187A001C2E4E /* VehicleView.swift */; };
 		E342D60E28141883001C2E4E /* VehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D60D28141883001C2E4E /* VehicleViewModel.swift */; };
+		E342D61028142A2F001C2E4E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D60F28142A2F001C2E4E /* Constants.swift */; };
+		E342D6122814BD9D001C2E4E /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D6112814BD9D001C2E4E /* BaseService.swift */; };
+		E342D6142814C58A001C2E4E /* VehicleDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D6132814C58A001C2E4E /* VehicleDetailModel.swift */; };
+		E342D6192819D726001C2E4E /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D6182819D726001C2E4E /* LocationModel.swift */; };
+		E342D61C281B04C3001C2E4E /* NavigationIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D61B281B04C3001C2E4E /* NavigationIcon.swift */; };
+		E342D61F281B0579001C2E4E /* ProceedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D61E281B0579001C2E4E /* ProceedButtonStyle.swift */; };
+		E342D621281B08C8001C2E4E /* VehicleBrandView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D620281B08C8001C2E4E /* VehicleBrandView.swift */; };
+		E342D625281B0F62001C2E4E /* KeyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D624281B0F62001C2E4E /* KeyListView.swift */; };
+		E342D627281B213B001C2E4E /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D626281B213B001C2E4E /* PhotoView.swift */; };
+		E342D62A281B244F001C2E4E /* OnBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D629281B244F001C2E4E /* OnBoardView.swift */; };
+		E342D62C281B2458001C2E4E /* OnBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D62B281B2458001C2E4E /* OnBoardViewModel.swift */; };
+		E342D62E281B2A3C001C2E4E /* CommentTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D62D281B2A3C001C2E4E /* CommentTextView.swift */; };
+		E342D630281B515E001C2E4E /* AboutVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D62F281B515E001C2E4E /* AboutVehicleView.swift */; };
+		E342D632281B539E001C2E4E /* AboutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D631281B539E001C2E4E /* AboutModel.swift */; };
+		E342D634281B623F001C2E4E /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D633281B623F001C2E4E /* BrandModel.swift */; };
+		E342D636281B66D8001C2E4E /* PagableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D635281B66D8001C2E4E /* PagableImageView.swift */; };
+		E342D638281B6877001C2E4E /* VehicleImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D637281B6877001C2E4E /* VehicleImageModel.swift */; };
+		E342D63A281BF0DE001C2E4E /* ContractSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D639281BF0DE001C2E4E /* ContractSliderView.swift */; };
+		E342D63C281C2BEC001C2E4E /* VehicleDetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D63B281C2BEC001C2E4E /* VehicleDetailInfoView.swift */; };
+		E342D63E281C313E001C2E4E /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D63D281C313E001C2E4E /* SliderView.swift */; };
+		E342D640281C38B8001C2E4E /* ContractButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */; };
+		E342D642281C4799001C2E4E /* TagsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E342D641281C4799001C2E4E /* TagsModel.swift */; };
 		E3C692F428140CAD00399438 /* eKarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C692F328140CAD00399438 /* eKarApp.swift */; };
 		E3C692F828140CAD00399438 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692F728140CAD00399438 /* Assets.xcassets */; };
 		E3C692FB28140CAD00399438 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3C692FA28140CAD00399438 /* Preview Assets.xcassets */; };
@@ -41,6 +63,29 @@
 		E342D609281415F0001C2E4E /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		E342D60B2814187A001C2E4E /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
 		E342D60D28141883001C2E4E /* VehicleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewModel.swift; sourceTree = "<group>"; };
+		E342D60F28142A2F001C2E4E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E342D6112814BD9D001C2E4E /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		E342D6132814C58A001C2E4E /* VehicleDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailModel.swift; sourceTree = "<group>"; };
+		E342D6152814C9AC001C2E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E342D6182819D726001C2E4E /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		E342D61B281B04C3001C2E4E /* NavigationIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationIcon.swift; sourceTree = "<group>"; };
+		E342D61E281B0579001C2E4E /* ProceedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceedButtonStyle.swift; sourceTree = "<group>"; };
+		E342D620281B08C8001C2E4E /* VehicleBrandView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleBrandView.swift; sourceTree = "<group>"; };
+		E342D624281B0F62001C2E4E /* KeyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyListView.swift; sourceTree = "<group>"; };
+		E342D626281B213B001C2E4E /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		E342D629281B244F001C2E4E /* OnBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardView.swift; sourceTree = "<group>"; };
+		E342D62B281B2458001C2E4E /* OnBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardViewModel.swift; sourceTree = "<group>"; };
+		E342D62D281B2A3C001C2E4E /* CommentTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTextView.swift; sourceTree = "<group>"; };
+		E342D62F281B515E001C2E4E /* AboutVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutVehicleView.swift; sourceTree = "<group>"; };
+		E342D631281B539E001C2E4E /* AboutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutModel.swift; sourceTree = "<group>"; };
+		E342D633281B623F001C2E4E /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		E342D635281B66D8001C2E4E /* PagableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagableImageView.swift; sourceTree = "<group>"; };
+		E342D637281B6877001C2E4E /* VehicleImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleImageModel.swift; sourceTree = "<group>"; };
+		E342D639281BF0DE001C2E4E /* ContractSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractSliderView.swift; sourceTree = "<group>"; };
+		E342D63B281C2BEC001C2E4E /* VehicleDetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailInfoView.swift; sourceTree = "<group>"; };
+		E342D63D281C313E001C2E4E /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractButtonStyle.swift; sourceTree = "<group>"; };
+		E342D641281C4799001C2E4E /* TagsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsModel.swift; sourceTree = "<group>"; };
 		E3C692F028140CAD00399438 /* eKar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eKar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3C692F328140CAD00399438 /* eKarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eKarApp.swift; sourceTree = "<group>"; };
 		E3C692F728140CAD00399438 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -82,6 +127,7 @@
 			children = (
 				E342D605281415B1001C2E4E /* Map */,
 				E342D606281415B8001C2E4E /* Vehicle */,
+				E342D61A281AF1B4001C2E4E /* onBoard */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -97,6 +143,8 @@
 		E342D60028140E41001C2E4E /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E342D60F28142A2F001C2E4E /* Constants.swift */,
+				E342D6112814BD9D001C2E4E /* BaseService.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -104,6 +152,12 @@
 		E342D60128140E50001C2E4E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E342D6132814C58A001C2E4E /* VehicleDetailModel.swift */,
+				E342D6182819D726001C2E4E /* LocationModel.swift */,
+				E342D631281B539E001C2E4E /* AboutModel.swift */,
+				E342D633281B623F001C2E4E /* BrandModel.swift */,
+				E342D637281B6877001C2E4E /* VehicleImageModel.swift */,
+				E342D641281C4799001C2E4E /* TagsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -111,6 +165,9 @@
 		E342D60228140E5A001C2E4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E342D61E281B0579001C2E4E /* ProceedButtonStyle.swift */,
+				E342D61B281B04C3001C2E4E /* NavigationIcon.swift */,
+				E342D63F281C38B8001C2E4E /* ContractButtonStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,10 +199,44 @@
 		E342D606281415B8001C2E4E /* Vehicle */ = {
 			isa = PBXGroup;
 			children = (
+				E342D61D281B0560001C2E4E /* Views */,
 				E342D60B2814187A001C2E4E /* VehicleView.swift */,
 				E342D60D28141883001C2E4E /* VehicleViewModel.swift */,
 			);
 			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		E342D61A281AF1B4001C2E4E /* onBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E342D628281B2140001C2E4E /* Views */,
+				E342D629281B244F001C2E4E /* OnBoardView.swift */,
+				E342D62B281B2458001C2E4E /* OnBoardViewModel.swift */,
+			);
+			path = onBoard;
+			sourceTree = "<group>";
+		};
+		E342D61D281B0560001C2E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E342D620281B08C8001C2E4E /* VehicleBrandView.swift */,
+				E342D624281B0F62001C2E4E /* KeyListView.swift */,
+				E342D62F281B515E001C2E4E /* AboutVehicleView.swift */,
+				E342D635281B66D8001C2E4E /* PagableImageView.swift */,
+				E342D639281BF0DE001C2E4E /* ContractSliderView.swift */,
+				E342D63B281C2BEC001C2E4E /* VehicleDetailInfoView.swift */,
+				E342D63D281C313E001C2E4E /* SliderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E342D628281B2140001C2E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E342D626281B213B001C2E4E /* PhotoView.swift */,
+				E342D62D281B2A3C001C2E4E /* CommentTextView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		E3C692E728140CAD00399438 = {
@@ -171,6 +262,7 @@
 		E3C692F228140CAD00399438 /* eKar */ = {
 			isa = PBXGroup;
 			children = (
+				E342D6152814C9AC001C2E4E /* Info.plist */,
 				E342D60428140E6C001C2E4E /* App */,
 				E342D5FE28140E24001C2E4E /* Scenes */,
 				E342D60228140E5A001C2E4E /* Views */,
@@ -338,11 +430,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E342D63C281C2BEC001C2E4E /* VehicleDetailInfoView.swift in Sources */,
+				E342D632281B539E001C2E4E /* AboutModel.swift in Sources */,
 				E342D60E28141883001C2E4E /* VehicleViewModel.swift in Sources */,
+				E342D642281C4799001C2E4E /* TagsModel.swift in Sources */,
+				E342D630281B515E001C2E4E /* AboutVehicleView.swift in Sources */,
+				E342D63E281C313E001C2E4E /* SliderView.swift in Sources */,
+				E342D61F281B0579001C2E4E /* ProceedButtonStyle.swift in Sources */,
+				E342D62C281B2458001C2E4E /* OnBoardViewModel.swift in Sources */,
 				E342D608281415E2001C2E4E /* MapView.swift in Sources */,
 				E3C692F428140CAD00399438 /* eKarApp.swift in Sources */,
+				E342D61028142A2F001C2E4E /* Constants.swift in Sources */,
+				E342D63A281BF0DE001C2E4E /* ContractSliderView.swift in Sources */,
+				E342D6192819D726001C2E4E /* LocationModel.swift in Sources */,
+				E342D625281B0F62001C2E4E /* KeyListView.swift in Sources */,
+				E342D634281B623F001C2E4E /* BrandModel.swift in Sources */,
+				E342D6122814BD9D001C2E4E /* BaseService.swift in Sources */,
+				E342D621281B08C8001C2E4E /* VehicleBrandView.swift in Sources */,
+				E342D62E281B2A3C001C2E4E /* CommentTextView.swift in Sources */,
+				E342D640281C38B8001C2E4E /* ContractButtonStyle.swift in Sources */,
+				E342D627281B213B001C2E4E /* PhotoView.swift in Sources */,
 				E342D60A281415F0001C2E4E /* MapViewModel.swift in Sources */,
+				E342D62A281B244F001C2E4E /* OnBoardView.swift in Sources */,
+				E342D636281B66D8001C2E4E /* PagableImageView.swift in Sources */,
+				E342D638281B6877001C2E4E /* VehicleImageModel.swift in Sources */,
 				E342D60C2814187A001C2E4E /* VehicleView.swift in Sources */,
+				E342D61C281B04C3001C2E4E /* NavigationIcon.swift in Sources */,
+				E342D6142814C58A001C2E4E /* VehicleDetailModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +618,7 @@
 				DEVELOPMENT_TEAM = VK3R7F9D63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eKar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -533,6 +648,7 @@
 				DEVELOPMENT_TEAM = VK3R7F9D63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eKar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
