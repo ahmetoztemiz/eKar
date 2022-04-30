@@ -23,6 +23,7 @@ struct VehicleView: View {
             ZStack {
                 VStack {
                     ScrollView {
+                        VStack {
                         PagableImageView(images: viewModel.images)
                             .frame(height: 200)
                         
@@ -30,6 +31,8 @@ struct VehicleView: View {
                             .padding(.horizontal, 20)
                         
                         ContractSliderView()
+                        }
+                        .background(Color("BlueBGColor"))
                         
                         AboutVehicleView(mainTitle: Constants.Text.aboutTitle, items: viewModel.aboutModel)
                             .padding(.horizontal, 20)
